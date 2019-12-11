@@ -96,7 +96,10 @@ border-radius: 30px;
   font-size: 0.9em;
     letter-spacing: 1px;
   margin: auto;
-    -webkit-animation-name: bounceInLeft;
+}
+
+.button {
+        -webkit-animation-name: bounceInLeft;
     animation-name: bounceInLeft;
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
@@ -150,28 +153,28 @@ p3 {
 
 .second {
     background-color: #7283FF;
-    height: 100%;
     width: 70%;
     float: right;
+    padding-bottom: 5vh;
 }
 
 .third {
     background-color: #64E0BE;
-    height: 100%;
-        width: 70%;
+  width: 70%;
     float: right;
+    padding-bottom: 5vh;
 }
 
 .fourth {
     background-color: #FFD257;
-    height: 100%;
-        width: 70%;
+ width: 70%;
     float: right;
+    padding-bottom: 5vh;
 }
 
 .fifth {
  background-color: white;
-    height: 50%;
+    
     width: 70%;
     float: right;
 }
@@ -183,13 +186,13 @@ h5 {
 }
 
 /*BARCODE*/
-h6 {
+h6, #resume {
     width: 100%;
     text-align: center;
     padding-top: 10%;
     font-family: 'Libre Barcode 39 Text', cursive;
     color: black;
-    font-size: 2em;
+    font-size: 1.5em;
     padding-bottom: 10%;
     margin-top: 15%;
     opacity: 0.7;
@@ -210,14 +213,14 @@ h13 {
 #portfolio {
     display: block;
     width: 90%; 
-      -webkit-transform: translate(6%, 20%); 
-      transform: translate(6%, 20%)
+      -webkit-transform: translate(6%, 15%); 
+      transform: translate(6%, 15%)
 }
 
 h7 {
     color: white;
     margin-left: 5%;
-    margin-top: 15%;
+    margin-top: 12%;
     display: block;
     font-size: .9em;
         -webkit-animation-name: fadeIn;
@@ -237,6 +240,7 @@ h8 {
     animation-name: fadeIn;
     -webkit-animation-duration: 3.5s;
     animation-duration: 3.5s;
+
 }
 
 h8::after {
@@ -249,14 +253,14 @@ h8::after {
 #emerge {
   display: block;
     width: 90%; 
-      -webkit-transform: translate(6%, 20%); 
-      transform: translate(6%, 20%)
+      -webkit-transform: translate(6%, 15%); 
+      transform: translate(6%, 15%)
 }
 
 h9 {
     color: white;
     margin-left: 5%;
-       margin-top: 15%;
+       margin-top: 12%;
     display: block;
     font-size: .9em;
 }
@@ -271,7 +275,7 @@ h10 {
 }
 
 h10::after {
-    content: "HTML/CSS";
+    content: "HTML + CSS";
     float: right;
     padding-right: 8%;
     font-weight: 100;
@@ -280,25 +284,27 @@ h10::after {
 #aperture {
     display: block;
     width: 90%;
-   -webkit-transform: translate(6%, 20%); 
-      transform: translate(6%, 20%)
+   -webkit-transform: translate(6%, 15%); 
+      transform: translate(6%, 15%)
 }
 
 h11 {
     color: white;
     margin-left: 5%;
-   margin-top: 15%;
+   margin-top: 12%;
     display: block;
     font-size: .9em;
 }
 
 h12 {
-    display: block;
+     display: block;
     color: white;
     margin-left: 5%;
     padding-top: 10px;
     font-weight:bolder;
     font-size: 1em;
+  
+    
 }
 
 h12::after {
@@ -487,4 +493,74 @@ h12::after {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width:800px){
+    
+    * {-webkit-animation: none !important;
+animation: none !important;}
+    
+    .sidebar-wrapper {
+        width: 100%;
+        height: 18vh;
+        padding-top: 8vh;
+        z-index: 1;
+
+    }
+    
+    .second {
+        padding-top: 26vh;
+        width: 100%;
+    }
+    
+    .third {
+        width: 100%;
+    }
+    
+    .fourth {
+
+        width: 100%;
+    }
+    .fifth {
+        width: 100%;
+    }
+    
+    h13 {
+    display: none;
+
+    }
+    
+    h1 {
+        font-size: .8em;
+        -webkit-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+        
+    }
+
+    #cta {
+        font-size: .6em; 
+        padding: 90px;
+        letter-spacing: 2px;
+    }
+    
+    button {
+          -webkit-transform: translate(0,-170%);
+        transform: translate(0,-170%);
+
+    }
+
 }
